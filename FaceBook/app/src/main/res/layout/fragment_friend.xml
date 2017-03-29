@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_child_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="        LỜI MỜI KẾT BẠN" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="false"
+               android:layout_below="@id/invite"
+                ></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_child_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_child_4"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/maybe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="     NHỮNG NGƯỜI BẠN CÓ THỂ BIẾT" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maybe"
+                android:isScrollContainer="false"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
